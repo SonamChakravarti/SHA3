@@ -1,0 +1,40 @@
+**************The below texts were hashed using implemented SHA-3 ***********
+===================Avalanche effect============================
+1. The quick brown fox jumps over the lazy dog
+Hash hex value: afa0bf5037ac5f69bf3d4e7424a9f39d8f94cde626f8ad080e09ac44a915240f
+2. The quick brown fox jumps over the lazy dog.
+Hash hex value: 92f17a6ff4ef31d7c1b6105c600ec1d4b603ca85a3a9eb5d77f9784a2e14d533
+3. ThE quick brown fox jumps over the lazy dog
+Hash hex value: 3ac923d15ebfa5b78d03534c4c7539d63cd0a0c4bd8a1cd12385b426581b3d57
+
+////////////////////////////////////////////////////////////////////////////////
+Observation: Here, the first input text is considered as standard and hence corresponding message digest is obtained.
+The second and third strings have a character modified in it. For second string, a fullstop is added and for third input, third character of string is changed to upper case.
+It is observed that adding a single character or modifying a character changes the digest completely. The digest is well garbled and no co-relation between input and output can be found.
+================================================================================
+
+Few more examples:
+1. Empty string:
+Hash hex value: 6ee5d3dbe4b8e4a938b531cbb5f35325c2cb6428d8c69ec6b6d1395403c37271
+
+2. Multiple lines:
+The quick brown fox jumps over the lazy dog. 
+Lazy dog gets angry.
+Hash hex value:
+e50dac5cb3544b177bbcc0dba074439d0d184294e915c2a1c9b86e7c69b44d87
+
+3. All characters same:
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+Hash hex value:
+d5776478256fcf335ff4ac7f0874fb63df4a2e115dc1f4b8e28f30cc96aba55e
+
+4. Only special characters:
+@##@$#$#$%$#%#%$#%%$^%$^%$^$^^^&^*&(*)()(
+Hash hex value:
+e63feef5a986de9f38ebb5c238b45aa123c7deccf595e4110e57784356f52fa0
+
+5. Only digits:
+324432478879908239249832758973289572937589237897021830932874
+Hash hex value: 
+69da725448c18505e82708d003d0aa699cfea9234b6ac11b03386ec3e7f325c9
