@@ -1,8 +1,5 @@
 ********************READ ME*************************************
-********************ECE/CSC-574 Programming assignment 1********
 ********************SHA-3 Hashing Algorithm*********************
-********************Submitted by Sonam Chakravarti**************
-********************schakr8 - 001083925*************************
 
 1. The implementation of SHA-3 has been done in C++.
 2. Makefile has been provided along with the main.cpp file to run the project.
